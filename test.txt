@@ -1,0 +1,108 @@
+2. Test Objectives
+
+Verify website functionality across different devices and browsers.
+
+Validate UI/UX consistency and responsiveness.
+Ensure proper navigation and links.
+Test performance and load handling.
+Check security aspects, including data protection.
+Validate content accuracy and language consistency.
+Confirm form submissions and third-party integrations.
+
+3. Scope of Testing
+
+Functional Testing: Validate menus, pages, and interactive elements.
+Usability Testing: Ensure intuitive navigation and accessibility.
+Compatibility Testing: Verify across browsers and devices.
+Performance Testing: Check site speed and load times.
+Security Testing: Identify vulnerabilities.
+Regression Testing: Ensure new updates do not break existing functionality.
+
+
+
+4- not done
+11- need proper links where you need to redirect (Dev comment)
+20- Need better quality image (Dev comment)
+22- Please do same for the browser view also. I have attached an image (QA comment)
+
+
+
+You can cross verify with Live and Dev site   
+
+Dev URLs: https://trustedpeptidesv2.webgen.me
+	  https://rxpeptides.webgen.me/  
+
+Live URLS : https://trustedpeptides.store/
+	    https://peptiderx.store/
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://api.velmora.level2app.com (staging)
+https://api.atlantis.level2app.com (development)
+https://sfapi.level2app.com  (production)
+
+
+
+
+
+
+
+
+Latclub modules which I have tested:
+
+-> Edit Profile
+-> FAQ page and form
+-> Membership Plan
+-> My Profile
+-> My bookings
+-> Package
+-> Package details page
+
+
+
+
+
+================New satcon=================
+live site => https://satconworld.com/
+devolopment site =>https://satcondev2.webgen.me/
+================Old satcon=================
+live site => https://satcon.in/
+devolopment site =>https://satcon-india-dev.webgen.me
+Satcon
+ 
+email : satyaki.mukherjee@satcon.in
+pass : a4b5c6d)
+ 
+ 
+email : satyaki.mukherjee@satconworld.com
+pass : Satcon#2025
+
+email : satyaki.mukherjee@satcon.in
+pass : a4b5c6d)
+
+
+
+Rajasthan - 220 KV Switchyard Structure & Foundation Design - 400 MW Solar Power Plant of Brooksfield, Barmer (Job entrusted by Sterling and Wilson) (Photo is from a similar project)
+
+1. fixed
+2. fixed
+3. fixed
+4. 
+5. fixed
+6. fixed
+
+
+
+
+
+

@@ -1,0 +1,265 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jun 09 11:31:54 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>168 seconds (168608 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='rxPeptideTestCases.AddToCartTest.addToCartTest()'><b>addToCartTest</b><br>Test class: rxPeptideTestCases.AddToCartTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;https://rxpeptides.webgen.me/my-account/&quot;&gt;...&lt;/a&gt; is not clickable at point (1183, 32). Other element would receive the click: &lt;div id=&quot;pum-2037&quot; role=&quot;dialog&quot; aria-modal=&quot;false&quot; class=&quot;pum pum-overlay pum-theme-1783 pum-theme-cutting-edge popmake-overlay pum-accessibility-disabled auto_open click_open pum-active&quot; data-popmake=&quot;{&amp;quot;id&amp;quot;:2037,&amp;quot;slug&amp;quot;:&amp;quot;default-open&amp;quot;,&amp;quot;theme_id&amp;quot;:1783,&amp;quot;cookies&amp;quot;:[{&amp;quot;event&amp;quot;:&amp;quot;on_popup_close&amp;quot;,&amp;quot;settings&amp;quot;:{&amp;quot;name&amp;quot;:&amp;quot;pum-2037&amp;quot;,&amp;quot;key&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;session&amp;quot;:null,&amp;quot;path&amp;quot;:true,&amp;quot;time&amp;quot;:&amp;quot;1 day&amp;quot;}}],&amp;quot;triggers&amp;quot;:[{&amp;quot;type&amp;quot;:&amp;quot;auto_open&amp;quot;,&amp;quot;settings&amp;quot;:{&amp;quot;cookie_name&amp;quot;:[&amp;quot;pum-2037&amp;quot;],&amp;quot;delay&amp;quot;:&amp;quot;5000&amp;quot;}},{&amp;quot;type&amp;quot;:&amp;quot;click_open&amp;quot;,&amp;quot;settings&amp;quot;:{&amp;quot;extra_selectors&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;cookie_name&amp;quot;:null}}],&amp;quot;mobile_disabled&amp;quot;:null,&amp;quot;tablet_disabled&amp;quot;:null,&amp;quot;meta&amp;quot;:{&amp;quot;display&amp;quot;:{&amp;quot;stackable&amp;quot;:false,&amp;quot;overlay_disabled&amp;quot;:false,&amp;quot;scrollable_content&amp;quot;:false,&amp;quot;disable_reposition&amp;quot;:false,&amp;quot;size&amp;quot;:&amp;quot;medium&amp;quot;,&amp;quot;responsive_min_width&amp;quot;:&amp;quot;0%&amp;quot;,&amp;quot;responsive_min_width_unit&amp;quot;:false,&amp;quot;responsive_max_width&amp;quot;:&amp;quot;100%&amp;quot;,&amp;quot;responsive_max_width_unit&amp;quot;:false,&amp;quot;custom_width&amp;quot;:&amp;quot;640px&amp;quot;,&amp;quot;custom_width_unit&amp;quot;:false,&amp;quot;custom_height&amp;quot;:&amp;quot;380px&amp;quot;,&amp;quot;custom_height_unit&amp;quot;:false,&amp;quot;custom_height_auto&amp;quot;:false,&amp;quot;location&amp;quot;:&amp;quot;center&amp;quot;,&amp;quot;position_from_trigger&amp;quot;:false,&amp;quot;position_top&amp;quot;:&amp;quot;100&amp;quot;,&amp;quot;position_left&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;position_bottom&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;position_right&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;position_fixed&amp;quot;:false,&amp;quot;animation_type&amp;quot;:&amp;quot;fade&amp;quot;,&amp;quot;animation_speed&amp;quot;:&amp;quot;350&amp;quot;,&amp;quot;animation_origin&amp;quot;:&amp;quot;center top&amp;quot;,&amp;quot;overlay_zindex&amp;quot;:false,&amp;quot;zindex&amp;quot;:&amp;quot;1999999999&amp;quot;},&amp;quot;close&amp;quot;:{&amp;quot;text&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;button_delay&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;overlay_click&amp;quot;:false,&amp;quot;esc_press&amp;quot;:false,&amp;quot;f4_press&amp;quot;:false},&amp;quot;click_open&amp;quot;:[]}}&quot; style=&quot;opacity: 1; display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.140)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [250886ee9dd2013cfef8cf24de70bd5b, clickElement {id=f.8E8044D3BDA25D2F87202265074697E1.d.F100B3F9436B65B7B77BA04394F3F403.e.72}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62499}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62499/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (250886ee9dd2013cfef8cf24de70bd5b)] -&gt; xpath: //div[contains(@class,&apos;h_account&apos;)]//a]
+Session ID: 250886ee9dd2013cfef8cf24de70bd5b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at rxPeptideTestCases.AddToCartTest.addToCartTest(AddToCartTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace767511741", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace767511741'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;https://rxpeptides.webgen.me/my-account/&quot;&gt;...&lt;/a&gt; is not clickable at point (1183, 32). Other element would receive the click: &lt;div id=&quot;pum-2037&quot; role=&quot;dialog&quot; aria-modal=&quot;false&quot; class=&quot;pum pum-overlay pum-theme-1783 pum-theme-cutting-edge popmake-overlay pum-accessibility-disabled auto_open click_open pum-active&quot; data-popmake=&quot;{&amp;quot;id&amp;quot;:2037,&amp;quot;slug&amp;quot;:&amp;quot;default-open&amp;quot;,&amp;quot;theme_id&amp;quot;:1783,&amp;quot;cookies&amp;quot;:[{&amp;quot;event&amp;quot;:&amp;quot;on_popup_close&amp;quot;,&amp;quot;settings&amp;quot;:{&amp;quot;name&amp;quot;:&amp;quot;pum-2037&amp;quot;,&amp;quot;key&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;session&amp;quot;:null,&amp;quot;path&amp;quot;:true,&amp;quot;time&amp;quot;:&amp;quot;1 day&amp;quot;}}],&amp;quot;triggers&amp;quot;:[{&amp;quot;type&amp;quot;:&amp;quot;auto_open&amp;quot;,&amp;quot;settings&amp;quot;:{&amp;quot;cookie_name&amp;quot;:[&amp;quot;pum-2037&amp;quot;],&amp;quot;delay&amp;quot;:&amp;quot;5000&amp;quot;}},{&amp;quot;type&amp;quot;:&amp;quot;click_open&amp;quot;,&amp;quot;settings&amp;quot;:{&amp;quot;extra_selectors&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;cookie_name&amp;quot;:null}}],&amp;quot;mobile_disabled&amp;quot;:null,&amp;quot;tablet_disabled&amp;quot;:null,&amp;quot;meta&amp;quot;:{&amp;quot;display&amp;quot;:{&amp;quot;stackable&amp;quot;:false,&amp;quot;overlay_disabled&amp;quot;:false,&amp;quot;scrollable_content&amp;quot;:false,&amp;quot;disable_reposition&amp;quot;:false,&amp;quot;size&amp;quot;:&amp;quot;medium&amp;quot;,&amp;quot;responsive_min_width&amp;quot;:&amp;quot;0%&amp;quot;,&amp;quot;responsive_min_width_unit&amp;quot;:false,&amp;quot;responsive_max_width&amp;quot;:&amp;quot;100%&amp;quot;,&amp;quot;responsive_max_width_unit&amp;quot;:false,&amp;quot;custom_width&amp;quot;:&amp;quot;640px&amp;quot;,&amp;quot;custom_width_unit&amp;quot;:false,&amp;quot;custom_height&amp;quot;:&amp;quot;380px&amp;quot;,&amp;quot;custom_height_unit&amp;quot;:false,&amp;quot;custom_height_auto&amp;quot;:false,&amp;quot;location&amp;quot;:&amp;quot;center&amp;quot;,&amp;quot;position_from_trigger&amp;quot;:false,&amp;quot;position_top&amp;quot;:&amp;quot;100&amp;quot;,&amp;quot;position_left&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;position_bottom&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;position_right&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;position_fixed&amp;quot;:false,&amp;quot;animation_type&amp;quot;:&amp;quot;fade&amp;quot;,&amp;quot;animation_speed&amp;quot;:&amp;quot;350&amp;quot;,&amp;quot;animation_origin&amp;quot;:&amp;quot;center top&amp;quot;,&amp;quot;overlay_zindex&amp;quot;:false,&amp;quot;zindex&amp;quot;:&amp;quot;1999999999&amp;quot;},&amp;quot;close&amp;quot;:{&amp;quot;text&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;button_delay&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;overlay_click&amp;quot;:false,&amp;quot;esc_press&amp;quot;:false,&amp;quot;f4_press&amp;quot;:false},&amp;quot;click_open&amp;quot;:[]}}&quot; style=&quot;opacity: 1; display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.140)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [250886ee9dd2013cfef8cf24de70bd5b, clickElement {id=f.8E8044D3BDA25D2F87202265074697E1.d.F100B3F9436B65B7B77BA04394F3F403.e.72}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62499}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62499/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (250886ee9dd2013cfef8cf24de70bd5b)] -&gt; xpath: //div[contains(@class,&apos;h_account&apos;)]//a]
+Session ID: 250886ee9dd2013cfef8cf24de70bd5b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at rxPeptideTestCases.AddToCartTest.addToCartTest(AddToCartTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>3</td>
+<td>rxPeptideTestCases.AddToCartTest@3fc2959f</td></tr>
+<tr>
+<td title='rxPeptideTestCases.LogoutTest.logoutTest()'><b>logoutTest</b><br>Test class: rxPeptideTestCases.LogoutTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;https://rxpeptides.webgen.me/my-account/&quot;&gt;...&lt;/a&gt; is not clickable at point (1191, 32). Other element would receive the click: &lt;div class=&quot;age-gate__background&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.140)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f7a2f42da49272b56534815146d833a3, clickElement {id=f.7D26B25978670B3E0EF4CA1CDDF4AE0A.d.B6FA2581FC820C2109E21578743BE0A3.e.48}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62641}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62641/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f7a2f42da49272b56534815146d833a3)] -&gt; xpath: //div[contains(@class,&apos;h_account&apos;)]//a]
+Session ID: f7a2f42da49272b56534815146d833a3
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at rxPeptideTestCases.LogoutTest.logoutTest(LogoutTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1553646796", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1553646796'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;https://rxpeptides.webgen.me/my-account/&quot;&gt;...&lt;/a&gt; is not clickable at point (1191, 32). Other element would receive the click: &lt;div class=&quot;age-gate__background&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.140)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f7a2f42da49272b56534815146d833a3, clickElement {id=f.7D26B25978670B3E0EF4CA1CDDF4AE0A.d.B6FA2581FC820C2109E21578743BE0A3.e.48}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62641}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62641/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f7a2f42da49272b56534815146d833a3)] -&gt; xpath: //div[contains(@class,&apos;h_account&apos;)]//a]
+Session ID: f7a2f42da49272b56534815146d833a3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at rxPeptideTestCases.LogoutTest.logoutTest(LogoutTest.java:16)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>3</td>
+<td>rxPeptideTestCases.LogoutTest@662ac478</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='rxPeptideTestCases.PlaceOrderTest.placeOrderTest()'><b>placeOrderTest</b><br>Test class: rxPeptideTestCases.PlaceOrderTest</td>
+<td></td>
+<td>51</td>
+<td>rxPeptideTestCases.PlaceOrderTest@217ed35e</td></tr>
+<tr>
+<td title='rxPeptideTestCases.RemoveFromCart.removeFromCart()'><b>removeFromCart</b><br>Test class: rxPeptideTestCases.RemoveFromCart</td>
+<td></td>
+<td>23</td>
+<td>rxPeptideTestCases.RemoveFromCart@31190526</td></tr>
+<tr>
+<td title='rxPeptideTestCases.LoginTest.loginTest()'><b>loginTest</b><br>Test class: rxPeptideTestCases.LoginTest</td>
+<td></td>
+<td>7</td>
+<td>rxPeptideTestCases.LoginTest@7dcf94f8</td></tr>
+<tr>
+<td title='rxPeptideTestCases.RegistrationTest.registrationTest()'><b>registrationTest</b><br>Test class: rxPeptideTestCases.RegistrationTest</td>
+<td></td>
+<td>9</td>
+<td>rxPeptideTestCases.RegistrationTest@229f66ed</td></tr>
+</table><p>
+</body>
+</html>
