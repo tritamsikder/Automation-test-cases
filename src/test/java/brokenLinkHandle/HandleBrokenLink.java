@@ -16,7 +16,7 @@ public class HandleBrokenLink {
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
-        driver.get("https://www.tcgdigital.com/privacy-policy-2/");
+        driver.get("https://dev-stsabinaparish.webgen.me/");
 
         List<WebElement> allLinks = driver.findElements(By.tagName("a"));
         System.out.println("Total number of links: " + allLinks.size());
